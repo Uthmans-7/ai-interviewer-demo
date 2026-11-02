@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Voice Interviewer</title>
+  <meta name="description" content="AI Voice Interviewer runs first-round screening interviews by voice. Candidates interview from a browser at a time that suits them; recruiters get a scored, evidence-backed report. Final Year Project 2026, Hamdard University.">
+  <meta name="theme-color" content="#0B1324">
+  <meta property="og:title" content="AI Voice Interviewer">
+  <meta property="og:description" content="Automated first-round interviews by voice, with a scored, evidence-backed report for recruiters.">
+  <meta property="og:image" content="videos/posters/follow-up-question.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#demo">Skip to the demo videos</a>
+
+  <header class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--dark">Final Year Project 2026</p>
+        <h1>AI Voice Interviewer</h1>
+        <p class="hero__lead">
+          Automated first-round interviews. Candidates interview by voice from
+          a browser, whenever suits them. Recruiters get a scored,
+          evidence-backed report.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#demo">Watch the demo</a>
+          <a class="btn btn--ghost" href="#how">How it works</a>
+        </div>
+        <p class="hero__meta">
+          Hamdard University<br>
+          Faculty of Engineering Sciences &amp; Technology
+        </p>
+      </div>
+
+      <figure class="transcript" aria-label="Excerpt from a recorded interview">
+        <figcaption class="transcript__head">
+          <span class="dot" aria-hidden="true"></span> Live interview
+          <span class="transcript__role">Junior AI Engineer</span>
+        </figcaption>
+        <div class="msg msg--ai">
+          <span class="msg__who">Interviewer</span>
+          Can you briefly introduce yourself and mention one project or
+          technical experience you’re particularly proud of?
+        </div>
+        <div class="msg msg--you">
+          <span class="msg__who">Candidate</span>
+          …one project I worked on was a news classifier, in which I used
+          BERT, which I fine-tuned.
+        </div>
+        <div class="msg msg--ai">
+          <span class="msg__who">Interviewer · follow-up</span>
+          That’s useful context. What specific metrics or outcomes did you
+          measure to evaluate the performance of your fine-tuned BERT model?
+        </div>
+        <p class="transcript__note">Taken from the follow-up clip below.</p>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Problem -->
+    <section class="section" aria-labelledby="problem-title">
+      <div class="wrap">
+        <p class="eyebrow">The problem</p>
+        <h2 id="problem-title">First-round interviews don’t scale</h2>
+        <div class="cards cards--3">
+          <article class="card">
+            <h3>They eat hours</h3>
+            <p>Every screening call takes time from HR and from engineers who
+              could be building, often to rule out candidates in the first
+              ten minutes.</p>
+          </article>
+          <article class="card">
+            <h3>Scheduling slows hiring</h3>
+            <p>Getting each candidate into the office, or onto a call at a time
+              that works for both sides, adds days to every hire.</p>
+          </article>
+          <article class="card">
+            <h3>Standards drift</h3>
+            <p>Different interviewers ask different questions and judge answers
+              differently, so candidates aren’t compared like for like.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. How it works -->
+    <section class="section section--tint" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">From invite link to report, in four steps</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n" aria-hidden="true">1</span>
+            <h3>Invite</h3>
+            <p>The recruiter picks a role and creates an interview link.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">2</span>
+            <h3>Interview</h3>
+            <p>The candidate opens the link and talks to the AI interviewer by
+              voice, straight from the browser.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">3</span>
+            <h3>Adapt</h3>
+            <p>After each answer the AI decides whether to follow up or move on,
+              and scores the answer against a structured rubric.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">4</span>
+            <h3>Report</h3>
+            <p>The recruiter reviews a structured report with per-answer scores
+              and an overall hire signal.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. Demo videos -->
+    <section class="section" id="demo" aria-labelledby="demo-title">
+      <div class="wrap">
+        <p class="eyebrow">See it in action</p>
+        <h2 id="demo-title">Five short clips from a real session</h2>
+        <p class="section__lead">
+          Filmed on a phone pointed at the laptop during a live interview for
+          the Junior AI Engineer role. Turn the sound on: the interview
+          happens by voice.
+        </p>
+
+        <div class="clips">
+          <article class="clip" id="clip-instructions">
+            <div class="clip__text">
+              <p class="clip__n">01 · 0:18</p>
+              <h3>Before the first question</h3>
+              <p>The interviewer speaks six short setup lines (quiet room,
+                headphones, stable connection, “you may interrupt me”) and shows
+                each one as it is said. The candidate clicks Ready to begin.</p>
+            </div>
+            <video controls playsinline preload="metadata"
+                   poster="videos/posters/instructions.jpg"
+                   width="480" height="864">
+              <source src="videos/instructions.mp4" type="video/mp4">
+              Your browser can’t play this video.
+              <a href="videos/instructions.mp4">Download it instead</a>.
+            </video>
+          </article>
+
+          <article class="clip" id="clip-first-question">
+            <div class="clip__text">
+              <p class="clip__n">02 · 0:17</p>
+              <h3>The opening question</h3>
+              <p>The session connects and the interviewer greets the candidate
+                by name for the role, then asks them to introduce themselves
+                and describe one project they’re proud of.</p>
+            </div>
+            <video controls playsinline preload="metadata"
+                   poster="videos/posters/first-question.jpg"
+                   width="480" height="864">
+              <source src="videos/first-question.mp4" type="video/mp4">
+              Your browser can’t play this video.
+              <a href="videos/first-question.mp4">Download it instead</a>.
+            </video>
+          </article>
+
+          <article class="clip" id="clip-follow-up">
+            <div class="clip__text">
+              <p class="clip__n">03 · 0:31</p>
+              <h3>A follow-up built from the answer</h3>
+              <p>The candidate mentions a news classifier built on a fine-tuned
+                BERT model. The next question picks up exactly that: which
+                metrics did they use to evaluate it?</p>
+            </div>
+            <video controls playsinline preload="metadata"
+                   poster="videos/posters/follow-up-question.jpg"
+                   width="480" height="864">
+              <source src="videos/follow-up-question.mp4" type="video/mp4">
+              Your browser can’t play this video.
+              <a href="videos/follow-up-question.mp4">Download it instead</a>.
+            </video>
+          </article>
+
+          <article class="clip" id="clip-hint">
+            <div class="clip__text">
+              <p class="clip__n">04 · 0:50</p>
+              <h3>When the candidate says “I don’t know”</h3>
+              <p>Asked how they’d handle data versioning across their modules,
+                the candidate says they don’t know. The interviewer doesn’t
+                score a blank answer. It gives a short hint and asks again.</p>
+            </div>
+            <video controls playsinline preload="metadata"
+                   poster="videos/posters/hint.jpg"
+                   width="480" height="864">
+              <source src="videos/hint.mp4" type="video/mp4">
+              Your browser can’t play this video.
+              <a href="videos/hint.mp4">Download it instead</a>.
+            </video>
+          </article>
+
+          <article class="clip" id="clip-interruption">
+            <div class="clip__text">
+              <p class="clip__n">05 · 0:29</p>
+              <h3>Interruptions, handled like a person would</h3>
+              <p>With sound on, you’ll hear the candidate talk over the
+                interviewer during a question about overfitting. The interviewer
+                replies “Happy to repeat” and asks the question again, more
+                simply.</p>
+            </div>
+            <video controls playsinline preload="metadata"
+                   poster="videos/posters/interruption-handling.jpg"
+                   width="480" height="864">
+              <source src="videos/interruption-handling.mp4" type="video/mp4">
+              Your browser can’t play this video.
+              <a href="videos/interruption-handling.mp4">Download it instead</a>.
+            </video>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Comparison -->
+    <section class="section section--tint" aria-labelledby="compare-title">
+      <div class="wrap">
+        <p class="eyebrow">Why it’s different</p>
+        <h2 id="compare-title">A real conversation, without the calendar</h2>
+        <p class="section__lead">
+          It combines the strengths of a live interview with the convenience
+          of recorded video tools.
+        </p>
+
+        <div class="table-scroll" role="region" aria-labelledby="compare-title" tabindex="0">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr">Feature</span></th>
+                <th scope="col">In-office interview</th>
+                <th scope="col">Recorded video tools</th>
+                <th scope="col" class="is-us">AI Voice Interviewer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Real two-way voice conversation</th>
+                <td><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Follows up based on each answer</th>
+                <td><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Handles interruptions naturally</th>
+                <td><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Copes with “I don’t know” &amp; off-topic answers</th>
+                <td><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Available anytime, no scheduling</th>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">No interviewer time per candidate</th>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td><span class="p" aria-hidden="true">~</span><span class="sr">Partly</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Same rubric for every candidate</th>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td><span class="p" aria-hidden="true">~</span><span class="sr">Partly</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Every score linked to the exact answer</th>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td><span class="n" aria-hidden="true">✗</span><span class="sr">No</span></td>
+                <td class="is-us"><span class="y" aria-hidden="true">✓</span><span class="sr">Yes</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="legend" aria-hidden="true">
+          <span class="y">✓</span> yes <span class="n">✗</span> no <span class="p">~</span> partly
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Under the hood -->
+    <section class="section section--dark" aria-labelledby="tech-title">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--dark">Under the hood</p>
+        <h2 id="tech-title">One turn of the conversation</h2>
+
+        <ol class="pipeline">
+          <li><span class="pipeline__k">Input</span>Candidate speaks</li>
+          <li><span class="pipeline__k">Speech-to-text</span>Deepgram</li>
+          <li class="is-core"><span class="pipeline__k">Interviewer brain</span>Llama 3.3 70B on Groq</li>
+          <li><span class="pipeline__k">Voice reply</span>Cartesia</li>
+          <li><span class="pipeline__k">Output</span>Scored report on the recruiter dashboard</li>
+        </ol>
+
+        <p class="tech__note">
+          Six conversation guards catch echoes, “I don’t know”, off-topic
+          replies and half-finished sentences before any answer is scored.
+        </p>
+        <p class="tech__stack">Built with Python, FastAPI and Pipecat.</p>
+
+        <dl class="stats">
+          <div><dt>Interview roles</dt><dd>3</dd></div>
+          <div><dt>Skill areas</dt><dd>17</dd></div>
+          <div><dt>Conversation guards</dt><dd>6</dd></div>
+          <div><dt>Scoring dimensions</dt><dd>6</dd></div>
+          <div><dt>Automated tests</dt><dd>159</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 7. Recruiter side -->
+    <section class="section" aria-labelledby="recruiter-title">
+      <div class="wrap recruiter">
+        <div>
+          <p class="eyebrow">For recruiters</p>
+          <h2 id="recruiter-title">A dashboard, not another inbox</h2>
+          <p class="section__lead">
+            Recruiters sign in to a separate dashboard to send interviews out
+            and review the results when they’re ready.
+          </p>
+        </div>
+        <ul class="ticks">
+          <li><strong>Invite links.</strong> Create a link for a role
+            (Junior AI Engineer, Frontend or Backend Developer) and share it
+            however you like.</li>
+          <li><strong>Optional email.</strong> Send the invitation straight
+            from the dashboard when email is set up. Copying the link always
+            works.</li>
+          <li><strong>Per-answer scores.</strong> Each answer is scored 1–5 on
+            a six-part competency rubric: structure, result orientation,
+            ownership, leadership, clarity and confidence. Every score sits
+            next to the question and the answer it came from.</li>
+          <li><strong>A hire signal that supports your call.</strong>
+            Strong Hire, Hire, Borderline or No Hire, labelled in the report
+            as decision support, not a final hiring decision. If an interview
+            ends early, the report says so and withholds the overall
+            signal.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. Team -->
+    <section class="section section--tint" aria-labelledby="team-title">
+      <div class="wrap">
+        <p class="eyebrow">Team</p>
+        <h2 id="team-title">Who built it</h2>
+        <ul class="team">
+          <li>Muhammad Usman</li>
+          <li>Taimur Ali Sakhawat</li>
+          <li>Bismah Khan Bangash</li>
+          <li>Eimaan Khan Bangash</li>
+        </ul>
+        <p class="supervisor">Supervised by <strong>Engr. Usman Javed</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>AI Voice Interviewer</strong>: Final Year Project 2026</p>
+      <p>Hamdard University · Faculty of Engineering Sciences &amp; Technology</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
